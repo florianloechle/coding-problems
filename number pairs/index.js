@@ -1,14 +1,15 @@
 /**
- *
+ * @format
  * @param {Array} list
  * @param {Number} k
  */
+
 function numberPairExists(list, k) {
   if (!Array.isArray(list) || list.length === 0) {
     return false;
   }
   const length = list.length;
-  for (let i = 0; i<=length; i++) {
+  for (let i = 0; i <= length; i++) {
     const value = list[i];
     for (let j = 0; j <= length; j++) {
       if (j !== i && value + list[j] === k) {
@@ -16,7 +17,7 @@ function numberPairExists(list, k) {
       }
     }
   }
-  return false
+  return false;
 }
 
 /**
@@ -24,12 +25,12 @@ function numberPairExists(list, k) {
  * @param {Array} list
  * @param {Number} k
  */
-function numberPairExistsWithSet(list,k) {
+function numberPairExistsWithSet(list, k) {
   if (!Array.isArray(list) || list.length === 0) {
     return false;
   }
   const numbers = new Set(list);
-  for(let i = 0; i<=list.length;i++) {
+  for (let i = 0; i <= list.length; i++) {
     const rest = k - list[i];
     if (numbers.has(rest)) {
       return true;
@@ -40,5 +41,5 @@ function numberPairExistsWithSet(list,k) {
 
 module.exports = {
   numberPairExists,
-  numberPairExistsWithSet
-}
+  numberPairExistsWithSet,
+};
