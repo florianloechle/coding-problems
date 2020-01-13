@@ -1,0 +1,28 @@
+{
+  "name": "coding-problems",
+  "version": "1.0.0",
+  "description": "A repo of some coding problems I did solve over time..",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianloechle/coding-problems.git"
+  },
+  "keywords": [
+    "javascript",
+    "problem",
+    "solution"
+  ],
+  "author": "Florian Löchle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/florianloechle/coding-problems/issues"
+  },
+  "homepage": "https://github.com/florianloechle/coding-problems#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
