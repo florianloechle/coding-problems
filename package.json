@@ -4,7 +4,8 @@
   "description": "A repo of some coding problems I did solve over time..",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "new": "node new-challenge.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/florianloechle/coding-problems#readme",
   "dependencies": {},
   "devDependencies": {
+    "husky": "^4.0.7",
     "jest": "^24.9.0"
   }
 }

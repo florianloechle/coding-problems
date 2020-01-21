@@ -11,8 +11,11 @@ function productOfNumbers(numbers) {
       if (index === counter) {
         return pro;
       }
+      if (number === 0) {
+        return 0;
+      }
       return number * pro;
-    });
+    }, 1);
     counter++;
     return product;
   });
